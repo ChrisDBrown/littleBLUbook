@@ -1,0 +1,295 @@
+[{
+	"id": 1,
+	"name": "Water Cannon",
+	"rank": 1,
+	"type": "Default",
+	"level": null
+}, {
+	"id": 2,
+	"name": "Flame Thrower",
+	"rank": 4,
+	"type": "Dungeon",
+	"level": 50
+}, {
+	"id": 3,
+	"name": "Aqua Breath",
+	"rank": 4,
+	"type": "Trial",
+	"level": 50
+}, {
+	"id": 4,
+	"name": "Flying Frenzy",
+	"rank": 3,
+	"type": "Dungeon",
+	"level": 50
+}, {
+	"id": 5,
+	"name": "Drill Cannons",
+	"rank": 2,
+	"type": "Open World",
+	"level": 46
+}, {
+	"id": 6,
+	"name": "High Voltage",
+	"rank": 4,
+	"type": "Raid",
+	"level": 50
+}, {
+	"id": 7,
+	"name": "Loom",
+	"rank": 1,
+	"type": "Open World",
+	"level": 50
+}, {
+	"id": 8,
+	"name": "Final Sting",
+	"rank": 2,
+	"type": "Open World",
+	"level": 13
+}, {
+	"id": 9,
+	"name": "Song of Torment",
+	"rank": 2,
+	"type": "Dungeon",
+	"level": 50
+}, {
+	"id": 10,
+	"name": "Glower",
+	"rank": 4,
+	"type": "Dungeon",
+	"level": 47
+}, {
+	"id": 11,
+	"name": "Plaincracker",
+	"rank": 2,
+	"type": "Open World",
+	"level": 28
+}, {
+	"id": 12,
+	"name": "Bristle",
+	"rank": 2,
+	"type": "Open World",
+	"level": 20
+}, {
+	"id": 13,
+	"name": "White Wind",
+	"rank": 3,
+	"type": "Spells Learned",
+	"level": null
+}, {
+	"id": 14,
+	"name": "Level 5 Petrify",
+	"rank": 2,
+	"type": "Dungeon",
+	"level": 28
+}, {
+	"id": 15,
+	"name": "Sharpened Knife",
+	"rank": 4,
+	"type": "Dungeon",
+	"level": 50
+}, {
+	"id": 16,
+	"name": "Ice Spikes",
+	"rank": 1,
+	"type": "Open World",
+	"level": 9
+}, {
+	"id": 17,
+	"name": "Blood Drain",
+	"rank": 1,
+	"type": "Open World",
+	"level": 5
+}, {
+	"id": 18,
+	"name": "Acorn Bomb",
+	"rank": 1,
+	"type": "Open World",
+	"level": 12
+}, {
+	"id": 19,
+	"name": "Bomb Toss",
+	"rank": 2,
+	"type": "Open World",
+	"level": 5
+}, {
+	"id": 20,
+	"name": "Off-guard",
+	"rank": 2,
+	"type": "Spells Learned",
+	"level": null
+}, {
+	"id": 21,
+	"name": "Self-destruct",
+	"rank": 1,
+	"type": "Open World",
+	"level": 12
+}, {
+	"id": 22,
+	"name": "Transfusion",
+	"rank": 2,
+	"type": "Spells Learned",
+	"level": null
+}, {
+	"id": 23,
+	"name": "Faze",
+	"rank": 3,
+	"type": "Open World",
+	"level": 6
+}, {
+	"id": 24,
+	"name": "Flying Sardine",
+	"rank": 1,
+	"type": "Open World",
+	"level": 30
+}, {
+	"id": 25,
+	"name": "Snort",
+	"rank": 4,
+	"type": "Trial",
+	"level": 50
+}, {
+	"id": 26,
+	"name": "4-tonze Weight",
+	"rank": 4,
+	"type": "Trial",
+	"level": 50
+}, {
+	"id": 27,
+	"name": "The Look",
+	"rank": 2,
+	"type": "Open World",
+	"level": 45
+}, {
+	"id": 28,
+	"name": "Bad Breath",
+	"rank": 3,
+	"type": "Open World",
+	"level": 31
+}, {
+	"id": 29,
+	"name": "Diamondback",
+	"rank": 4,
+	"type": "Dungeon",
+	"level": 50
+}, {
+	"id": 30,
+	"name": "Mighty Guard",
+	"rank": 4,
+	"type": "Spells Learned",
+	"level": null
+}, {
+	"id": 31,
+	"name": "Sticky Tongue",
+	"rank": 4,
+	"type": "Open World",
+	"level": 2
+}, {
+	"id": 32,
+	"name": "Toad Oil",
+	"rank": 3,
+	"type": "Open World",
+	"level": 24
+}, {
+	"id": 33,
+	"name": "The Ram's Voice",
+	"rank": 2,
+	"type": "Dungeon",
+	"level": 38
+}, {
+	"id": 34,
+	"name": "The Dragon's Voice",
+	"rank": 2,
+	"type": "Dungeon",
+	"level": 38
+}, {
+	"id": 35,
+	"name": "Missile",
+	"rank": 4,
+	"type": "Trial",
+	"level": 50
+}, {
+	"id": 36,
+	"name": "1000 Needles",
+	"rank": 4,
+	"type": "Open World",
+	"level": 24
+}, {
+	"id": 37,
+	"name": "Ink Jet",
+	"rank": 3,
+	"type": "Dungeon",
+	"level": 50
+}, {
+	"id": 38,
+	"name": "Fire Angon",
+	"rank": 3,
+	"type": "Dungeon",
+	"level": 50
+}, {
+	"id": 39,
+	"name": "Moon Flute",
+	"rank": 1,
+	"type": "Masked Carnival",
+	"level": null
+}, {
+	"id": 40,
+	"name": "Tail Screw",
+	"rank": 4,
+	"type": "Open World",
+	"level": 50
+}, {
+	"id": 41,
+	"name": "Mind Blast",
+	"rank": 1,
+	"type": "Dungeon",
+	"level": 16
+}, {
+	"id": 42,
+	"name": "Doom",
+	"rank": 4,
+	"type": "Masked Carnival",
+	"level": null
+}, {
+	"id": 43,
+	"name": "Peculiar Light",
+	"rank": 2,
+	"type": "Open World",
+	"level": 45
+}, {
+	"id": 44,
+	"name": "Feather Rain",
+	"rank": 5,
+	"type": "Trial",
+	"level": 50
+}, {
+	"id": 45,
+	"name": "Eruption",
+	"rank": 5,
+	"type": "Trial",
+	"level": 50
+}, {
+	"id": 46,
+	"name": "Mountain Buster",
+	"rank": 5,
+	"type": "Trial",
+	"level": 50
+}, {
+	"id": 47,
+	"name": "Shock Strike",
+	"rank": 5,
+	"type": "Trial",
+	"level": 50
+}, {
+	"id": 48,
+	"name": "Glass Dance",
+	"rank": 5,
+	"type": "Trial",
+	"level": 50
+}, {
+	"id": 49,
+	"name": "Veil of the Whorl",
+	"rank": 5,
+	"type": "Trial",
+	"level": 50
+}]
