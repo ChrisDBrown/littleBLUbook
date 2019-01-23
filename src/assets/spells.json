@@ -1,295 +1,1000 @@
 [{
 	"id": 1,
 	"name": "Water Cannon",
-	"rank": 1,
-	"type": "Default",
-	"level": null
+  "rank": 1,
+  "locations": [
+    {
+      "type": "Default"
+    }
+  ]
 }, {
 	"id": 2,
 	"name": "Flame Thrower",
 	"rank": 4,
-	"type": "Dungeon",
-	"level": 50
+	"locations": [
+    {
+      "type": "Dungeon",
+      "level": 50,
+      "name": "Brayflox's Longstop (Hard)",
+      "enemy": "Gobmachine G-VI"
+    },
+    {
+      "type": "Dungeon",
+      "level": 50,
+      "name": "The Keeper of the Lake",
+      "enemy": "Einhander"
+    },
+    {
+      "type": "Dungeon",
+      "level": 50,
+      "name": "The Keeper of the Lake",
+      "enemy": "Magitek Gunship"
+    }
+  ]
 }, {
 	"id": 3,
 	"name": "Aqua Breath",
 	"rank": 4,
-	"type": "Trial",
-	"level": 50
+	"locations": [
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Dragon's Neck",
+      "enemy": "Ultros"
+    },
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Whorleater (Hard)",
+      "enemy": "Leviathan"
+    },
+    {
+      "type": "Masked Carnivale Enemy",
+      "stage": 20,
+      "name": "Miss Typhon",
+      "enemy": "Ultros"
+    }
+  ]
 }, {
 	"id": 4,
 	"name": "Flying Frenzy",
 	"rank": 3,
-	"type": "Dungeon",
-	"level": 50
+	"locations": [
+    {
+      "type": "Dungeon",
+      "level": 50,
+      "name": "Pharos Sirius",
+      "enemy": "Magitek Gunship"
+    }
+  ]
 }, {
 	"id": 5,
 	"name": "Drill Cannons",
 	"rank": 2,
-	"type": "Open World",
-	"level": 46
+	"locations": [
+    {
+      "type": "FATE",
+      "level": 46,
+      "name": "Reverse Engineering",
+      "enemy": "Abandoned Vanguard",
+      "area": "Northern Thanalan",
+      "coordinates": {
+        "x": 18,
+        "y": 15
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 50,
+      "enemy": "Magitek Vanguard H-2",
+      "area": "Northern Thanalan",
+      "coordinates": {
+        "x": 16,
+        "y": 15
+      }
+    }
+  ]
 }, {
 	"id": 6,
 	"name": "High Voltage",
 	"rank": 4,
-	"type": "Raid",
-	"level": 50
+	"locations": [
+    {
+      "type": "Raid",
+      "level": 50,
+      "name": "The Binding Coil of Bahamut - Turn 1",
+      "enemy": "ADS"
+    },
+    {
+      "type": "Raid",
+      "level": 50,
+      "name": "The Binding Coil of Bahamut - Turn 2",
+      "enemy": "ADS"
+    },
+    {
+      "type": "Masked Carnivale Enemy",
+      "stage": 15,
+      "name": "The Me Nobody Nodes",
+      "enemy": "Bestial Node"
+    }
+  ]
 }, {
 	"id": 7,
 	"name": "Loom",
 	"rank": 1,
-	"type": "Open World",
-	"level": 50
+	"locations": [
+    {
+      "type": "Hunt Mark",
+      "level": 50,
+      "enemy": "Flame Sergeant Dalvag",
+      "area": "Northern Thanalan"
+    },
+    {
+      "type": "Dungeon",
+      "level": 50,
+      "name": "Tam-Tara Deepcroft (Hard)",
+      "enemy": "Dantalion"
+    }
+  ]
 }, {
 	"id": 8,
 	"name": "Final Sting",
 	"rank": 2,
-	"type": "Open World",
-	"level": 13
+	"locations": [
+    {
+      "type": "Open World",
+      "level": 13,
+      "enemy": "Killer Wespe",
+      "area": "Middle La Noscea",
+      "coordinates": {
+        "x": 15,
+        "y": 15
+      }
+    },
+    {
+      "type": "Dungeon",
+      "level": 35,
+      "name": "The Sunken Temple of Qarn",
+      "enemy": "Temple Bee"
+    }
+  ]
 }, {
 	"id": 9,
 	"name": "Song of Torment",
 	"rank": 2,
-	"type": "Dungeon",
-	"level": 50
+	"locations": [
+    {
+      "type": "Dungeon",
+      "level": 50,
+      "name": "Pharos Sirius",
+      "enemy": "Siren"
+    }
+  ]
 }, {
 	"id": 10,
 	"name": "Glower",
 	"rank": 4,
-	"type": "Dungeon",
-	"level": 47
+	"locations": [
+    {
+      "type": "Dungeon",
+      "level": 47,
+      "name": "The Aurum Vale",
+      "enemy": "Coincounter"
+    }
+  ]
 }, {
 	"id": 11,
 	"name": "Plaincracker",
 	"rank": 2,
-	"type": "Open World",
-	"level": 28
+	"locations": [
+    {
+      "type": "Open World",
+      "level": 28,
+      "enemy": "Clay Golem",
+      "area": "North Shroud",
+      "coordinates": {
+        "x": 19,
+        "y": 29
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 29,
+      "enemy": "Sandstone Golem",
+      "area": "Southern Thanalan",
+      "coordinates": {
+        "x": 24,
+        "y": 13
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 34,
+      "enemy": "Basalt Golem",
+      "area": "Outer La Noscea",
+      "coordinates": {
+        "x": 16,
+        "y": 16
+      }
+    },
+    {
+      "type": "Dungeon",
+      "level": 50,
+      "name": "Copperbell Mines (Hard)",
+      "enemy": "Gogmagolem"
+    },
+    {
+      "type": "Masked Carnivale Enemy",
+      "stage": 25,
+      "name": "Dirty Rotten Azulmagia",
+      "enemy": "Azulmagia"
+    }
+  ]
 }, {
 	"id": 12,
 	"name": "Bristle",
 	"rank": 2,
-	"type": "Open World",
-	"level": 20
+	"locations": [
+    {
+      "type": "Open World",
+      "level": 20,
+      "enemy": "Wild Boar",
+      "area": "East Shroud",
+      "coordinates": {
+        "x": 18,
+        "y": 24
+      }
+    }
+  ]
 }, {
 	"id": 13,
 	"name": "White Wind",
 	"rank": 3,
-	"type": "Spells Learned",
-	"level": null
+	"locations": [
+    {
+      "type": "Spells Learned",
+      "number": 10
+    }
+  ]
 }, {
 	"id": 14,
 	"name": "Level 5 Petrify",
 	"rank": 2,
-	"type": "Dungeon",
-	"level": 28
+	"locations": [
+    {
+      "type": "Dungeon",
+      "level": 28,
+      "name": "Haukke Manor",
+      "enemy": "Manor Sentry"
+    }
+  ]
 }, {
 	"id": 15,
 	"name": "Sharpened Knife",
 	"rank": 4,
-	"type": "Dungeon",
-	"level": 50
+	"locations": [
+    {
+      "type": "Dungeon",
+      "level": 50,
+      "name": "The Wanderer's Palace",
+      "enemy": "Tonberry King"
+    }
+  ]
 }, {
 	"id": 16,
 	"name": "Ice Spikes",
 	"rank": 1,
-	"type": "Open World",
-	"level": 9
+	"locations": [
+    {
+      "type": "Open World",
+      "level": 9,
+      "enemy": "Trickster Imp",
+      "area": "Central Shroud",
+      "coordinates": {
+        "x": 27,
+        "y": 24
+      }
+    }
+  ]
 }, {
 	"id": 17,
 	"name": "Blood Drain",
 	"rank": 1,
-	"type": "Open World",
-	"level": 5
+	"locations": [
+    {
+      "type": "Open World",
+      "level": 7,
+      "enemy": "Cave Bat",
+      "area": "Lower La Noscea",
+      "coordinates": {
+        "x": 27,
+        "y": 16
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 5,
+      "enemy": "Chigoe",
+      "area": "Central Shroud",
+      "coordinates": {
+        "x": 25,
+        "y": 20
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 14,
+      "enemy": "Sun Bat",
+      "area": "Central Thanalan",
+      "coordinates": {
+        "x": 26,
+        "y": 18
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 20,
+      "enemy": "Black Bat",
+      "area": "East Shroud",
+      "coordinates": {
+        "x": 17,
+        "y": 23
+      }
+    }
+  ]
 }, {
 	"id": 18,
 	"name": "Acorn Bomb",
 	"rank": 1,
-	"type": "Open World",
-	"level": 12
+	"locations": [
+    {
+      "type": "Open World",
+      "level": 12,
+      "enemy": "Treant Sapling",
+      "area": "North Shroud",
+      "coordinates": {
+        "x": 27,
+        "y": 28
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 12,
+      "enemy": "Treant Sapling",
+      "area": "Central Shroud",
+      "coordinates": {
+        "x": 27,
+        "y": 15
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 14,
+      "enemy": "Treant Sapling",
+      "area": "East Shroud",
+      "coordinates": {
+        "x": 13,
+        "y": 25
+      }
+    }
+  ]
 }, {
 	"id": 19,
 	"name": "Bomb Toss",
 	"rank": 2,
-	"type": "Open World",
-	"level": 5
+	"locations": [
+    {
+      "type": "Open World",
+      "level": 5,
+      "enemy": "Goblin Fisher",
+      "area": "Middle La Noscea",
+      "coordinates": {
+        "x": 23,
+        "y": 21
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 5,
+      "enemy": "Goblin Gambler",
+      "area": "Middle La Noscea",
+      "coordinates": {
+        "x": 23,
+        "y": 21
+      }
+    }
+  ]
 }, {
 	"id": 20,
 	"name": "Off-guard",
 	"rank": 2,
-	"type": "Spells Learned",
-	"level": null
+	"locations": [
+    {
+      "type": "Spells Learned",
+      "number": 5
+    }
+  ]
 }, {
 	"id": 21,
 	"name": "Self-destruct",
 	"rank": 1,
-	"type": "Open World",
-	"level": 12
+	"locations": [
+    {
+      "type": "Open World",
+      "level": 12,
+      "enemy": "Glide Bomb",
+      "area": "Western Thanalan",
+      "coordinates": {
+        "x": 27,
+        "y": 16
+      }
+    },
+    {
+      "type": "Dungeon",
+      "level": 17,
+      "name": "Copperbell Mines",
+      "enemy": "Blasting Cap"
+    },
+    {
+      "type": "Dungeon",
+      "level": 17,
+      "name": "Copperbell Mines",
+      "enemy": "Flambeau"
+    },
+    {
+      "type": "Dungeon",
+      "level": 20,
+      "name": "Halatali",
+      "enemy": "Gas Bomb"
+    }
+  ]
 }, {
 	"id": 22,
 	"name": "Transfusion",
 	"rank": 2,
-	"type": "Spells Learned",
-	"level": null
+	"locations": [
+    {
+      "type": "Spells Learned",
+      "number": 20
+    }
+  ]
 }, {
 	"id": 23,
 	"name": "Faze",
 	"rank": 3,
-	"type": "Open World",
-	"level": 6
+	"locations": [
+    {
+      "type": "FATE",
+      "level": 6,
+      "name": "Survivor Rats",
+      "enemy": "Qiqirn Gullroaster",
+      "area": "Central Thanalan",
+      "coordinates": {
+        "x": 18,
+        "y": 20
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 9,
+      "enemy": "Qiqirn Shellsweeper",
+      "area": "Central Thanalan",
+      "coordinates": {
+        "x": 16,
+        "y": 19
+      }
+    },
+    {
+      "type": "FATE",
+      "level": 30,
+      "name": "Careless Whiskers",
+      "enemy": "Qiqirn Gullroaster",
+      "area": "Eastern La Noscea",
+      "coordinates": {
+        "x": 29,
+        "y": 34
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 32,
+      "enemy": "Qiqirn Gullroaster",
+      "area": "Easter La Noscea",
+      "coordinates": {
+        "x": 26,
+        "y": 32
+      }
+    }
+  ]
 }, {
 	"id": 24,
 	"name": "Flying Sardine",
 	"rank": 1,
-	"type": "Open World",
-	"level": 30
+	"locations": [
+    {
+      "type": "Open World",
+      "level": 30,
+      "enemy": "Apkallu",
+      "area": "Easter La Noscea",
+      "coordinates": {
+        "x": 27,
+        "y": 35
+      }
+    }
+  ]
 }, {
 	"id": 25,
 	"name": "Snort",
 	"rank": 4,
-	"type": "Trial",
-	"level": 50
+	"locations": [
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Dragon's Neck",
+      "enemy": "Typhon"
+    },
+    {
+      "type": "Masked Carnivale Enemy",
+      "stage": 20,
+      "name": "Miss Typhon",
+      "enemy": "Typhon"
+    }
+  ]
 }, {
 	"id": 26,
 	"name": "4-tonze Weight",
 	"rank": 4,
-	"type": "Trial",
-	"level": 50
+	"locations": [
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Dragon's Neck",
+      "enemy": "Ultros"
+    }
+  ]
 }, {
 	"id": 27,
 	"name": "The Look",
 	"rank": 2,
-	"type": "Open World",
-	"level": 45
+	"locations": [
+    {
+      "type": "Levequest",
+      "level": 45,
+      "name": "Necrologis: The Liminal Ones",
+      "enemy": "Denizen of the Dark",
+      "area": "Mor Dgona",
+      "coordinates": {
+        "x": 29,
+        "y": 12
+      }
+    },
+    {
+      "type": "Dungeon",
+      "level": 50,
+      "name": "Amdapor Keep",
+      "enemy": "Anantaboga"
+    }
+  ]
 }, {
 	"id": 28,
 	"name": "Bad Breath",
 	"rank": 3,
-	"type": "Open World",
-	"level": 31
+	"locations": [
+    {
+      "type": "Open World",
+      "level": 31,
+      "enemy": "Stroper",
+      "area": "Central Shroud",
+      "coordinates": {
+        "x": 18,
+        "y": 21
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 31,
+      "enemy": "Halitostroper",
+      "area": "Central Shroud",
+      "coordinates": {
+        "x": 15,
+        "y": 21
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 34,
+      "enemy": "Stroper",
+      "area": "South Shroud",
+      "coordinates": {
+        "x": 20,
+        "y": 28
+      }
+    }
+  ]
 }, {
 	"id": 29,
 	"name": "Diamondback",
 	"rank": 4,
-	"type": "Dungeon",
-	"level": 50
+	"locations": [
+    {
+      "type": "Dungeon",
+      "level": 50,
+      "name": "The Stone Vigil (Hard)",
+      "enemy": "Cuca Fera"
+    },
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Steps of Faith",
+      "enemy": "Horde Armored Dragon"
+    }
+  ]
 }, {
 	"id": 30,
 	"name": "Mighty Guard",
 	"rank": 4,
-	"type": "Spells Learned",
-	"level": null
+	"locations": [
+    {
+      "type": "Spells Learned",
+      "number": 30
+    }
+  ]
 }, {
 	"id": 31,
 	"name": "Sticky Tongue",
 	"rank": 4,
-	"type": "Open World",
-	"level": 2
+	"locations": [
+    {
+      "type": "FATE",
+      "level": 2,
+      "name": "You Call that a Toad",
+      "enemy": "Cane Toad",
+      "area": "Lower La Noscea",
+      "coordinates": {
+        "x": 24,
+        "y": 22
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 14,
+      "enemy": "Toxic Toad",
+      "area": "Central Thanalan",
+      "coordinates": {
+        "x": 27,
+        "y": 19
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 22,
+      "enemy": "Laughing Gigantoad",
+      "area": "Western Thanalan",
+      "coordinates": {
+        "x": 15,
+        "y": 7
+      }
+    }
+  ]
 }, {
 	"id": 32,
 	"name": "Toad Oil",
 	"rank": 3,
-	"type": "Open World",
-	"level": 24
+	"locations": [
+    {
+      "type": "Open World",
+      "level": 24,
+      "enemy": "Giggling Gigantoad",
+      "area": "Western Thanalan",
+      "coordinates": {
+        "x": 15,
+        "y": 7
+      }
+    }
+  ]
 }, {
 	"id": 33,
 	"name": "The Ram's Voice",
 	"rank": 2,
-	"type": "Dungeon",
-	"level": 38
+	"locations": [
+    {
+      "type": "Dungeon",
+      "level": 38,
+      "name": "Cutter's Cry",
+      "enemy": "Chimera"
+    },
+    {
+      "type": "FATE",
+      "level": 49,
+      "name": "Go, Go, Gorgimera",
+      "enemy": "Gorgimera",
+      "area": "Northern Thanalan",
+      "coordinates": {
+        "x": 17,
+        "y": 14
+      }
+    },
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "A Relic Reborn: The Chimera",
+      "enemy": "Chimera"
+    },
+    {
+      "type": "Masked Carnivale Enemy",
+      "stage": 25,
+      "name": "Dirty Rotten Azulmagia",
+      "enemy": "Azulmagia"
+    }
+  ]
 }, {
 	"id": 34,
 	"name": "The Dragon's Voice",
 	"rank": 2,
-	"type": "Dungeon",
-	"level": 38
+	"locations": [
+    {
+      "type": "Dungeon",
+      "level": 38,
+      "name": "Cutter's Cry",
+      "enemy": "Chimera"
+    },
+    {
+      "type": "FATE",
+      "level": 49,
+      "name": "Go, Go, Gorgimera",
+      "enemy": "Gorgimera",
+      "area": "Northern Thanalan",
+      "coordinates": {
+        "x": 17,
+        "y": 14
+      }
+    },
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "A Relic Reborn: The Chimera",
+      "enemy": "Chimera"
+    },
+    {
+      "type": "Masked Carnivale Enemy",
+      "stage": 25,
+      "name": "Dirty Rotten Azulmagia",
+      "enemy": "Azulmagia"
+    }
+  ]
 }, {
 	"id": 35,
 	"name": "Missile",
 	"rank": 4,
-	"type": "Trial",
-	"level": 50
+	"locations": [
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "Battle in the Big Keep",
+      "enemy": "Enkidu"
+    }
+  ]
 }, {
 	"id": 36,
 	"name": "1000 Needles",
 	"rank": 4,
-	"type": "Open World",
-	"level": 24
+	"locations": [
+    {
+      "type": "Levequest",
+      "level": 24,
+      "name": "Flower Power",
+      "enemy": "Sabotender Bailaor",
+      "area": "Southern Thanalan",
+      "coordinates": {
+        "x": 18,
+        "y": 13
+      }
+    },
+    {
+      "type": "Open World",
+      "level": 26,
+      "enemy": "Sabotender Bailaor",
+      "area": "Southern Thanalan",
+      "coordinates": {
+        "x": 16,
+        "y": 15
+      }
+    },
+    {
+      "type": "Dungeon",
+      "level": 38,
+      "name": "Cutter's Cry",
+      "enemy": "Sabotender Desertor"
+    }
+  ]
 }, {
 	"id": 37,
 	"name": "Ink Jet",
 	"rank": 3,
-	"type": "Dungeon",
-	"level": 50
+	"locations": [
+    {
+      "type": "Dungeon",
+      "level": 50,
+      "name": "Sastasha (Hard)",
+      "enemy": "Kraken"
+    }
+  ]
 }, {
 	"id": 38,
 	"name": "Fire Angon",
 	"rank": 3,
-	"type": "Dungeon",
-	"level": 50
+	"locations": [
+    {
+      "type": "Dungeon",
+      "level": 50,
+      "name": "The Wanderer's Palace (Hard)",
+      "enemy": "Frumious Koheel Ja"
+    }
+  ]
 }, {
 	"id": 39,
 	"name": "Moon Flute",
 	"rank": 1,
-	"type": "Masked Carnival",
-	"level": null
+	"locations": [
+    {
+      "type": "Masked Carnival Stages",
+      "stage": 20
+    }
+  ]
 }, {
 	"id": 40,
 	"name": "Tail Screw",
 	"rank": 4,
-	"type": "Open World",
-	"level": 50
+	"locations": [
+    {
+      "type": "Dungeon",
+      "level": 50,
+      "name": "Sastasha (Hard)",
+      "enemy": "Karlabos"
+    },
+    {
+      "type": "Open World",
+      "level": 61,
+      "enemy": "Crag Claw",
+      "area": "The Peaks",
+      "coordinates": {
+        "x": 27,
+        "y": 8
+      }
+    }
+  ]
 }, {
 	"id": 41,
 	"name": "Mind Blast",
 	"rank": 1,
-	"type": "Dungeon",
-	"level": 16
+	"locations": [
+    {
+      "type": "Dungeon",
+      "level": 16,
+      "name": "The Tam-Tara Deepcroft",
+      "enemy": "Galvanth the Dominator"
+    }
+  ]
 }, {
 	"id": 42,
 	"name": "Doom",
 	"rank": 4,
-	"type": "Masked Carnival",
-	"level": null
+	"locations": [
+    {
+      "type": "Masked Carnival Stages",
+      "stage": 20
+    }
+  ]
 }, {
 	"id": 43,
 	"name": "Peculiar Light",
 	"rank": 2,
-	"type": "Open World",
-	"level": 45
+	"locations": [
+    {
+      "type": "Open World",
+      "level": 45,
+      "enemy": "Lentic Mudpuppy",
+      "area": "Mor Dhona",
+      "coordinates": {
+        "x": 13,
+        "y": 10
+      }
+    }
+  ]
 }, {
 	"id": 44,
 	"name": "Feather Rain",
 	"rank": 5,
-	"type": "Trial",
-	"level": 50
+	"locations": [
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Howling Eye (Extreme)",
+      "enemy": "Garuda"
+    }
+  ]
 }, {
 	"id": 45,
 	"name": "Eruption",
 	"rank": 5,
-	"type": "Trial",
-	"level": 50
+	"locations": [
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Bowl of Embers (Extreme)",
+      "enemy": "Ifrit"
+    },
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Bowl of Embers (Hard)",
+      "enemy": "Ifrit"
+    }
+  ]
 }, {
 	"id": 46,
 	"name": "Mountain Buster",
 	"rank": 5,
-	"type": "Trial",
-	"level": 50
+	"locations": [
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Navel (Extreme)",
+      "enemy": "Titan"
+    },
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Navel (Hard)",
+      "enemy": "Ifrit"
+    }
+  ]
 }, {
 	"id": 47,
 	"name": "Shock Strike",
 	"rank": 5,
-	"type": "Trial",
-	"level": 50
+	"locations": [
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Striking Tree (Extreme)",
+      "enemy": "Ramuh"
+    },
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Striking Tree (Hard)",
+      "enemy": "Ramuh"
+    }
+  ]
 }, {
 	"id": 48,
 	"name": "Glass Dance",
 	"rank": 5,
-	"type": "Trial",
-	"level": 50
+	"locations": [
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "Akh Afah Amphitheatre (Extreme)",
+      "enemy": "Shiva"
+    }
+  ]
 }, {
 	"id": 49,
 	"name": "Veil of the Whorl",
 	"rank": 5,
-	"type": "Trial",
-	"level": 50
+	"locations": [
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Whorleater (Extreme)",
+      "enemy": "Leviathan"
+    },
+    {
+      "type": "Trial",
+      "level": 50,
+      "name": "The Whorleater (Hard)",
+      "enemy": "Leviathan"
+    }
+  ]
 }]
