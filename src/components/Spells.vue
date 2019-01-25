@@ -10,6 +10,7 @@
           <div v-for="(location, index) in scope.row.locations" v-bind:key="index">
             <div v-if="location.type == 'Open World'">
               {{ location.enemy }} in {{ location.area }}
+              <b>TESTING NETLIFY AUTO-DEPLOY</b>
               <el-button
                 @click="mapBoxInfo = { mapName: location.area, xValue: location.coordinates.x, yValue: location.coordinates.y }; showMapBox = true">
                 Show Map
