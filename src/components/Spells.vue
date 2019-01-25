@@ -6,7 +6,16 @@
       v-on:row-click="handleRowClick">
       <el-table-column type="expand">
         <template slot-scope="scope">
-          {{ scope.row.locations }}
+          <!-- TODO: Need to split this into a separate component to avoid this becoming messy when all possible types are added -->
+          <div v-for="(location, index) in scope.row.locations" v-bind:key="index">
+            <div v-if="location.type == 'Open World'">
+              {{ location.enemy }} in {{ location.area }}
+              <el-button
+                @click="mapBoxInfo = { mapName: location.area, xValue: location.coordinates.x, yValue: location.coordinates.y }; showMapBox = true">
+                Show Map
+              </el-button>
+            </div>
+          </div>
         </template>
       </el-table-column>
       <el-table-column
@@ -35,13 +44,16 @@
       </el-table-column>
     </el-table>
 
-    <el-dialog title="Map" :visible.sync="showMapBox">
-      {{ mapBoxInfo }}
+    <el-dialog title="Map" :visible.sync="showMapBox" width="90%">
+      <div v-if="mapBoxInfo">
+        <Map :mapName="mapBoxInfo.mapName" :xValue="mapBoxInfo.xValue" :yValue="mapBoxInfo.yValue" />
+      </div>
     </el-dialog>
   </div>
 </template>
 
 <script>
+  import Map from './Map.vue'
   // Adapted from https://ffxiv.consolegameswiki.com/wiki/Blue_Magic_Spellbook
   const spells = require('../assets/spells.json')
 
@@ -57,7 +69,8 @@
       handleRowClick(row) {
         this.$refs.spellsTable.toggleRowExpansion(row);
       }
-    }
+    },
+    components: { Map }
   }
 </script>
 

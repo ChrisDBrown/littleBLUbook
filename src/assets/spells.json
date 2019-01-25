@@ -499,7 +499,7 @@
       "type": "Open World",
       "level": 32,
       "enemy": "Qiqirn Gullroaster",
-      "area": "Easter La Noscea",
+      "area": "Eastern La Noscea",
       "coordinates": {
         "x": 26,
         "y": 32
@@ -515,7 +515,7 @@
       "type": "Open World",
       "level": 30,
       "enemy": "Apkallu",
-      "area": "Easter La Noscea",
+      "area": "Eastern La Noscea",
       "coordinates": {
         "x": 27,
         "y": 35
