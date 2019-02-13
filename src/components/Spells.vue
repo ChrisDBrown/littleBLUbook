@@ -37,6 +37,11 @@
           <span v-for="n in scope.row.rank" :key="n">★</span>
         </template>
       </el-table-column>
+      <el-table-column>
+        <template slot-scope="scope">
+          <el-checkbox-button :value="isSpellLearned(scope.row.id)" v-on:change="handleLearnedClick(scope.row.id)">Learned</el-checkbox-button>
+        </template>
+      </el-table-column>
     </el-table>
 
     <el-dialog title="Map" :visible.sync="showMapBox" width="90%">
@@ -63,7 +68,13 @@
     },
     methods: {
       handleRowClick(row) {
-        this.$refs.spellsTable.toggleRowExpansion(row);
+        this.$refs.spellsTable.toggleRowExpansion(row)
+      },
+      handleLearnedClick(id) {
+        this.$store.dispatch('toggleLearnedSpell', id)
+      },
+      isSpellLearned (id) {
+        return this.$store.state.learned.includes(id)
       }
     },
     components: { Location, Map }
