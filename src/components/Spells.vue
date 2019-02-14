@@ -4,6 +4,7 @@
       ref="spellsTable"
       :data="spells"
       v-on:row-click="handleRowClick">
+
       <el-table-column type="expand">
         <template slot-scope="scope">
           <table>
@@ -13,12 +14,14 @@
           </table>
         </template>
       </el-table-column>
+
       <el-table-column
         prop="id"
         label="No."
         width="70"
         sortable>
       </el-table-column>
+
       <el-table-column
         prop="name"
         label="Spell"
@@ -29,32 +32,28 @@
           </div>
         </template>
       </el-table-column>
+
       <el-table-column
         prop="rank"
         label="Rank"
+        v-if="window.width > 600"
         sortable>
         <template slot-scope="scope">
           <span v-for="n in scope.row.rank" :key="n">★</span>
         </template>
       </el-table-column>
+
       <el-table-column>
         <template slot-scope="scope">
           <el-checkbox-button :value="isSpellLearned(scope.row.id)" v-on:change="handleLearnedClick(scope.row.id)">Learned</el-checkbox-button>
         </template>
       </el-table-column>
     </el-table>
-
-    <el-dialog title="Map" :visible.sync="showMapBox" width="90%">
-      <div v-if="mapBoxInfo">
-        <Map :mapName="mapBoxInfo.mapName" :xValue="mapBoxInfo.xValue" :yValue="mapBoxInfo.yValue" />
-      </div>
-    </el-dialog>
   </div>
 </template>
 
 <script>
   import Location from './Location.vue'
-  import Map from './Map.vue'
   // Adapted from https://ffxiv.consolegameswiki.com/wiki/Blue_Magic_Spellbook
   const spells = require('../assets/spells.json')
 
@@ -62,8 +61,10 @@
     data() {
       return {
         spells: spells,
-        showMapBox: false,
-        mapBoxInfo: null
+        window: {
+          width: 0,
+          height: 0
+        }
       }
     },
     methods: {
@@ -75,9 +76,20 @@
       },
       isSpellLearned (id) {
         return this.$store.state.learned.includes(id)
+      },
+      handleResize() {
+        this.window.width = window.innerWidth;
+        this.window.height = window.innerHeight;
       }
     },
-    components: { Location, Map }
+    created() {
+      window.addEventListener('resize', this.handleResize)
+      this.handleResize();
+    },
+    destroyed() {
+      window.removeEventListener('resize', this.handleResize)
+    },
+    components: { Location }
   }
 </script>
 
