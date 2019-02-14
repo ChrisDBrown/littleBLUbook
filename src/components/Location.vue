@@ -10,7 +10,7 @@
       </div>
 
       <div v-if="location.type == 'FATE'">
-        <td>{{ location.enemy }} (level {{ location.level }}) in the FATE "{{ location.name }}" in {{ location.area }} (x{{ location.coordinates.x }},y{{ location.coordinates.y }})</td>
+        <td>{{ location.enemy }} (level {{ location.level }}) in the FATE "{{ location.name }}" in {{ location.area }} (x{{ location.coordinates.x }},y{{ location.coordinates.y }}) <el-button icon="el-icon-search" circle @click="showMap(location)"></el-button></td>
       </div>
 
       <div v-if="location.type == 'Hunt Mark'">
@@ -18,7 +18,7 @@
       </div>
 
       <div v-if="location.type == 'Levequest'">
-        <td>{{ location.enemy }} (level {{ location.level }}) in the Levequest "{{ location.name }}" in {{ location.area }} (x{{ location.coordinates.x }},y{{ location.coordinates.y }})</td>
+        <td>{{ location.enemy }} (level {{ location.level }}) in the Levequest "{{ location.name }}" in {{ location.area }} (x{{ location.coordinates.x }},y{{ location.coordinates.y }}) <el-button icon="el-icon-search" circle @click="showMap(location)"></el-button></td>
       </div>
 
       <div v-if="location.type == 'Masked Carnivale Enemy'">
@@ -30,7 +30,7 @@
       </div>
 
       <div v-if="location.type == 'Open World'">
-        <td>{{ location.enemy }} (level {{ location.level }} in {{ location.area }} (x{{ location.coordinates.x }},y{{ location.coordinates.y }})</td>
+        <td>{{ location.enemy }} (level {{ location.level }} in {{ location.area }} (x{{ location.coordinates.x }},y{{ location.coordinates.y }}) <el-button icon="el-icon-search" circle @click="showMap(location)"></el-button></td>
       </div>
 
       <div v-if="location.type == 'Raid'">
@@ -52,6 +52,11 @@
   export default {
     props: {
       location: Object
+    },
+    methods: {
+      showMap(location) {
+        this.$store.dispatch('showMapBoxForLocation', location)
+      }
     }
   }
 </script>

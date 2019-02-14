@@ -15,7 +15,9 @@ const localStorage = store => {
 
 export default new Vuex.Store({
   state: {
-    learned: []
+    learned: [],
+    showMapBox: false,
+    mapBoxInfo: null
   },
   mutations: {
     setLearnedSpells (state, learnedSpells) {
@@ -28,6 +30,18 @@ export default new Vuex.Store({
       } else {
         state.learned = state.learned.filter(item => item !== spell)
       }
+    },
+    showMapBoxForLocation (state, location) {
+      state.mapBoxInfo = {
+        mapName: location.area,
+        xValue: location.coordinates.x,
+        yValue: location.coordinates.y
+      }
+      state.showMapBox = true
+    },
+    hideMapBox (state) {
+      state.showMapBox = false
+      state.mapBoxInfo = null
     }
   },
   actions: {
@@ -36,6 +50,12 @@ export default new Vuex.Store({
     },
     toggleLearnedSpell({ commit }, spell) {
       commit('toggleLearnedSpell', spell)
+    },
+    showMapBoxForLocation({ commit }, location) {
+      commit('showMapBoxForLocation', location)
+    },
+    hideMapBox({ commit }) {
+      commit('hideMapBox')
     }
   },
   plugins: [localStorage],
