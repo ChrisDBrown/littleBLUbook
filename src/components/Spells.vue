@@ -41,7 +41,7 @@
           sortable>
           <template slot-scope="scope">
             <div class="spell-name">
-              <img :src="'/spells/' + scope.row.id + '.png'" class="spell-thumb" /> <span>{{ scope.row.name }}</span>
+              <img :src="'/spells/' + scope.row.id + '.png'" class="spell-thumb" :alt="scope.row.name + ' Spell Icon'" /> <span>{{ scope.row.name }}</span>
             </div>
           </template>
         </el-table-column>
