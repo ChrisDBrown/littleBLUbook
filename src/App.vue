@@ -58,6 +58,11 @@ export default {
         this.$store.dispatch('hideMapBox')
       }
     },
+  },
+  mounted: function () {
+    this.$nextTick(function () {
+      this.$ga.page('/')
+    })
   }
 }
 </script>
