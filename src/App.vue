@@ -46,7 +46,7 @@ export default {
       return this.$store.state.mapBoxInfo.mapName
         + ' (x'
         + this.$store.state.mapBoxInfo.xValue
-        + ', '
+        + ', y'
         + this.$store.state.mapBoxInfo.yValue
         + ')'
     },

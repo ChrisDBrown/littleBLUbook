@@ -9,7 +9,7 @@
     </li>
 
     <li v-if="location.type == 'FATE'">
-      {{ location.enemy }} (level {{ location.level }}) in the FATE "{{ location.name }}" in {{ location.area }} (x{{ location.coordinates.x }},y{{ location.coordinates.y }}) <el-button icon="el-icon-search" circle @click="showMap(location)"></el-button>
+      {{ location.enemy }} (level {{ location.level }}) in the FATE "{{ location.name }}" in {{ location.area }} (x{{ location.coordinates.x }}, y{{ location.coordinates.y }}) <el-button icon="el-icon-search" circle @click="showMap(location)"></el-button>
     </li>
 
     <li v-if="location.type == 'Hunt Mark'">
@@ -17,7 +17,7 @@
     </li>
 
     <li v-if="location.type == 'Levequest'">
-      {{ location.enemy }} (level {{ location.level }}) in the Levequest "{{ location.name }}" in {{ location.area }} (x{{ location.coordinates.x }},y{{ location.coordinates.y }}) <el-button icon="el-icon-search" circle @click="showMap(location)"></el-button>
+      {{ location.enemy }} (level {{ location.level }}) in the Levequest "{{ location.name }}" in {{ location.area }} (x{{ location.coordinates.x }}, y{{ location.coordinates.y }}) <el-button icon="el-icon-search" circle @click="showMap(location)"></el-button>
     </li>
 
     <li v-if="location.type == 'Masked Carnivale Enemy'">
@@ -29,7 +29,7 @@
     </li>
 
     <li v-if="location.type == 'Open World'">
-      {{ location.enemy }} (level {{ location.level }} in {{ location.area }} (x{{ location.coordinates.x }},y{{ location.coordinates.y }}) <el-button icon="el-icon-search" circle @click="showMap(location)"></el-button>
+      {{ location.enemy }} (level {{ location.level }}) in {{ location.area }} (x{{ location.coordinates.x }}, y{{ location.coordinates.y }}) <el-button icon="el-icon-search" circle @click="showMap(location)"></el-button>
     </li>
 
     <li v-if="location.type == 'Raid'">
