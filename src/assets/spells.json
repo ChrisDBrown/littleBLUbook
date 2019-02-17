@@ -64,7 +64,7 @@
       "type": "Dungeon",
       "level": 50,
       "name": "Pharos Sirius",
-      "enemy": "Magitek Gunship"
+      "enemy": "Zu"
     }
   ]
 }, {
@@ -562,7 +562,7 @@
       "level": 45,
       "name": "Necrologis: The Liminal Ones",
       "enemy": "Denizen of the Dark",
-      "area": "Mor Dgona",
+      "area": "Mor Dhona",
       "coordinates": {
         "x": 29,
         "y": 12
