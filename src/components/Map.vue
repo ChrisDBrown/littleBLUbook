@@ -3,14 +3,14 @@
     <img
       :srcset="srcSet"
       :sizes="sizes"
-      :src="'/maps/' + mapName + '-2300w.jpg'"
+      :src="`/maps/${mapName}-2300w.jpg`"
       :alt="mapName + ' Map'"
       width="100%" />
     <svg
       class="map-marker"
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
-      :style="'top:' + yOffset + '%; left: ' + xOffset + '%;'">
+      :style="`top: ${yOffset}%; left: ${xOffset}%;`">
       <circle
         cx="15"
         cy="15"
@@ -69,8 +69,7 @@
       },
       srcSet() {
         const srcSet = responsiveImageSizes.reduce((srcSet, size) => {
-          const srcForSize = encodeURI('/maps/' + this.mapName + '-' + size.generatedWidth + 'w.jpg') + ' ' + size.generatedWidth + 'w, '
-          return srcSet + srcForSize
+          return srcSet + encodeURI(`/maps/${this.mapName}-${size.generatedWidth}w.jpg`) + ` ${size.generatedWidth}w, `
         }, '')
 
         return srcSet.substring(0, srcSet.length - 2)
@@ -78,7 +77,7 @@
       sizes() {
         const sizeSet = responsiveImageSizes.reduce((sizes, size) => {
           if (size.maxScreenWidth) {
-            return sizes + '(max-width: ' + size.maxScreenWidth + ') ' + size.displayWidth + ','
+            return `${sizes}(max-width: ${size.maxScreenWidth}) ${size.displayWidth},`
           }
 
           return sizes + size.displayWidth + ','
