@@ -7,8 +7,8 @@
  */
 
 
-$maps = json_decode(file_get_contents('mapdata.json'), true);
-$spells = json_decode(file_get_contents('spells.json'), true);
+$maps = json_decode(file_get_contents('src/assets/mapdata.json'), true);
+$spells = json_decode(file_get_contents('src/assets/spells.json'), true);
 
 $requiredMaps = [];
 
@@ -25,5 +25,5 @@ foreach ($spells as $spell) {
 
 foreach ($requiredMaps as $map) {
   $mapFile = file_get_contents('https://xivapi.com/' . $map['MapFilename']);
-  file_put_contents('../../public/maps/' . $map['PlaceName']['Name'] . '-' . $map['ID'] . '.jpg', $mapFile);
+  file_put_contents('helpers/maps/' . $map['PlaceName']['Name'] . '-' . $map['ID'] . '.jpg', $mapFile);
 }

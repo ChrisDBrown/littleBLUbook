@@ -1,0 +1,37 @@
+[
+  {
+    "generatedWidth": 250,
+    "maxScreenWidth": "320px",
+    "displayWidth": "250px"
+  },
+  {
+    "generatedWidth": 300,
+    "maxScreenWidth": "375px",
+    "displayWidth": "300px"
+  },
+  {
+    "generatedWidth": 350,
+    "maxScreenWidth": "425px",
+    "displayWidth": "350px"
+  },
+  {
+    "generatedWidth": 675,
+    "maxScreenWidth": "768px",
+    "displayWidth": "675px"
+  },
+  {
+    "generatedWidth": 900,
+    "maxScreenWidth": "1024px",
+    "displayWidth": "900px"
+  },
+  {
+    "generatedWidth": 1300,
+    "maxScreenWidth": "1440px",
+    "displayWidth": "1300px"
+  },
+  {
+    "generatedWidth": 2300,
+    "maxScreenWidth": false,
+    "displayWidth": "2300px"
+  }
+]

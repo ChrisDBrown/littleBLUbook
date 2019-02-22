@@ -1,6 +1,11 @@
 <template>
   <div class="map-container">
-    <img :src="'/maps/' + mapName + '.jpg'" width="100%" />
+    <img
+      :srcset="srcSet"
+      :sizes="sizes"
+      :src="'/maps/' + mapName + '-2300w.jpg'"
+      :alt="mapName + ' Map'"
+      width="100%" />
     <svg
       class="map-marker"
       xmlns="http://www.w3.org/2000/svg"
@@ -21,6 +26,8 @@
 
 <script>
   const sizeFactors = require('../assets/mapsizefactors.json')
+  const responsiveImageSizes = require('../assets/sizes.json')
+
   const maxSizeForFactors = {
     95: 44.1,
     100: 41.9,
@@ -59,6 +66,25 @@
       },
       yOffset() {
         return ((this.yValue - 1) / (this.mapMaxSize - 1)) * 100
+      },
+      srcSet() {
+        const srcSet = responsiveImageSizes.reduce((srcSet, size) => {
+          const srcForSize = encodeURI('/maps/' + this.mapName + '-' + size.generatedWidth + 'w.jpg') + ' ' + size.generatedWidth + 'w, '
+          return srcSet + srcForSize
+        }, '')
+
+        return srcSet.substring(0, srcSet.length - 2)
+      },
+      sizes() {
+        const sizeSet = responsiveImageSizes.reduce((sizes, size) => {
+          if (size.maxScreenWidth) {
+            return sizes + '(max-width: ' + size.maxScreenWidth + ') ' + size.displayWidth + ','
+          }
+
+          return sizes + size.displayWidth + ','
+        }, '')
+
+        return sizeSet.substring(0, sizeSet.length - 1)
       }
     }
   }
