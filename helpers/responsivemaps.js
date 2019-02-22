@@ -10,6 +10,6 @@ fs.readdirSync(inputFolder).forEach(file => {
   sizes.forEach(size => {
     sharp(inputFolder + file)
       .resize(size.generatedWidth)
-      .toFile(outputFolder + file.split('.').slice(0, -1).join('.') + '-' + size.generatedWidth + 'w.jpg')
+      .toFile(outputFolder + file.split('.').slice(0, -1).join('.') + `-${size.generatedWidth}w.jpg`)
   })
 })
