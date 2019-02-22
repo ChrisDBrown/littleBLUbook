@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "node helpers/responsivemaps.js && vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -21,6 +21,7 @@
     "babel-plugin-component": "^1.1.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "sharp": "^0.21.3",
     "vue-cli-plugin-element": "^1.0.1",
     "vue-template-compiler": "^2.5.21"
   },
