@@ -50,15 +50,13 @@
         </el-table-column>
 
         <el-table-column
-          prop="rank"
-          label="Rank"
+          :formatter="formatLevel"
+          label="Level"
           header-align="center"
           align="center"
           v-if="window.width > 600"
+          :sort-method="sortByLevel"
           sortable>
-          <template slot-scope="scope">
-            <span v-for="n in scope.row.rank" :key="n">★</span>
-          </template>
         </el-table-column>
 
         <el-table-column
@@ -84,6 +82,17 @@
   // Adapted from https://ffxiv.consolegameswiki.com/wiki/Blue_Magic_Spellbook
   const spells = require('../assets/spells.json')
 
+  const getLevelForSpell = (spell => {
+    let level = 100
+    spell.locations.forEach(location => {
+      if (location.level && location.level < level) {
+        level = location.level
+      }
+    })
+
+    return level === 100 ? false : level
+  })
+
   export default {
     data() {
       return {
@@ -107,6 +116,21 @@
       handleResize() {
         this.window.width = window.innerWidth;
         this.window.height = window.innerHeight;
+      },
+      formatLevel(spell) {
+        const level = getLevelForSpell(spell)
+
+        return level ? level : 'N/A'
+      },
+      sortByLevel(a, b) {
+        const levelA = getLevelForSpell(a)
+        const levelB = getLevelForSpell(b)
+
+        if (levelA == levelB) {
+          return 0
+        }
+
+        return levelB - levelA
       }
     },
     computed: {
