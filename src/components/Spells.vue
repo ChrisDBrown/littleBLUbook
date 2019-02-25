@@ -2,15 +2,17 @@
   <el-row
     type="flex"
     justify="center">
+
     <el-col
       :xs="24"
       :sm="24"
       :md="20"
       :lg="16"
       :xl="14">
+
       <el-table
         ref="spellsTable"
-        :data="spells"
+        :data="filteredSpells"
         v-on:row-click="handleRowClick">
 
         <el-table-column
@@ -26,7 +28,6 @@
         </el-table-column>
 
         <el-table-column
-          prop="id"
           label="No"
           width="70"
           header-align="center"
@@ -62,6 +63,7 @@
         <el-table-column
           width="80"
           header-align="center"
+
           :label="learnedOutOfTotal">
           <template slot-scope="scope">
             <el-checkbox-button
@@ -72,8 +74,19 @@
               </el-checkbox-button>
           </template>
         </el-table-column>
+
       </el-table>
+
+      <div class="switch-box">
+        <el-switch
+          v-model="hideSpellsLearned"
+          active-text="Hide learned spells"
+          inactive-text="Show all spells">
+        </el-switch>
+      </div>
+
     </el-col>
+
   </el-row>
 </template>
 
@@ -97,6 +110,7 @@
     data() {
       return {
         spells: spells,
+        hideSpellsLearned: false,
         window: {
           width: 0,
           height: 0
@@ -136,6 +150,15 @@
     computed: {
       learnedOutOfTotal() {
         return this.$store.state.learned.length + '/' + this.spells.length
+      },
+      filteredSpells() {
+        if (this.hideSpellsLearned === false) {
+          return this.spells
+        }
+
+        return this.spells.filter(spell => {
+          return !this.$store.state.learned.includes(spell.id)
+        })
       }
     },
     created() {
@@ -178,5 +201,9 @@ td.el-table__expanded-cell[class*=cell] {
 
 .location-list li {
   padding: 10px 0;
+}
+
+.switch-box {
+  padding-top: 25px;
 }
 </style>
