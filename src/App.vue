@@ -5,6 +5,17 @@
         <h1>Little BLU Book</h1>
       </el-header>
 
+      <el-row>
+        <el-button type="text" @click="showAboutPage = true">what's this?</el-button>
+      </el-row>
+
+      <el-dialog
+        title="what's this?"
+        :visible.sync="showAboutPage">
+        Excellent content explaining the site
+      </el-dialog>
+
+
       <el-main>
         <spells></spells>
       </el-main>
@@ -33,6 +44,11 @@ export default {
   name: 'app',
   components: {
     Spells, Map
+  },
+  data() {
+    return {
+      showAboutPage: false
+    }
   },
   computed: {
     mapBoxInfo () {
